@@ -8,7 +8,8 @@ describe "convert_roman_nums_back" do
 		"III" => 3,
 		"IV" => 4,
 		"V" => 5,
-		"VI" => 6
+		"VI" => 6,
+		"X" => 10
 	}.each_pair do |roman, arabic|
 		it "converts roman numerals back to regular numbers" do
 		expect(convert_roman_nums_back(roman)).to eq(arabic)
