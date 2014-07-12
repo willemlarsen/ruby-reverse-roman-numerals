@@ -11,7 +11,8 @@ describe "convert_roman_nums_back" do
 		"VI" => 6,
 		"X" => 10,
 		"XX" => 20,
-		"L" => 50
+		"L" => 50,
+		"LX" => 60
 	}.each_pair do |roman, arabic|
 		it "converts roman numerals back to regular numbers" do
 		expect(convert_roman_nums_back(roman)).to eq(arabic)
