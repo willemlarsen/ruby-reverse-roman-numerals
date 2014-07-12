@@ -29,11 +29,15 @@ def counting_fifty(roman_num)
 	end
 end
 
+def ends_in_I(roman_num)
+	counting_ones(roman_num) +
+	counting_fives(roman_num) +
+	counting_tens(roman_num)
+end
+
 def convert_roman_nums_back(roman_num)
 	if roman_num[-1] == "I"
-		counting_ones(roman_num) +
-		counting_fives(roman_num) +
-		counting_tens(roman_num)
+		ends_in_I(roman_num)
 	elsif roman_num[-1] == "X"
 		counting_tens(roman_num) +
 		counting_fifty(roman_num)
